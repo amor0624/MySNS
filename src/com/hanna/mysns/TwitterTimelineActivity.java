@@ -1,11 +1,5 @@
 package com.hanna.mysns;
 
-import java.io.Closeable;
-import java.io.InputStream;
-import java.net.URL;
-import java.net.URLConnection;
-
-import android.app.ActivityManager;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,21 +8,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.util.LruCache;
-import android.text.format.DateUtils;
 import android.util.Log;
-import android.util.Pair;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.SimpleCursorAdapter.ViewBinder;
 
 public class TwitterTimelineActivity extends TimelineBaseActivity implements
         LoaderCallbacks<Cursor> {

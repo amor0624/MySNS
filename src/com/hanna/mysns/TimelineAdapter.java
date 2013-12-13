@@ -30,18 +30,15 @@ public class TimelineAdapter extends SimpleCursorAdapter {
 		// Manually bind created at timestamp to its view
 		long timestamp = cursor.getLong(cursor
 		        .getColumnIndex(StatusData.C_CREATED_AT));
-		TextView textCreatedAt = (TextView) row
-		        .findViewById(R.id.rowCreatedAt);
+		TextView textCreatedAt = (TextView) row.findViewById(R.id.rowCreatedAt);
 		textCreatedAt.setText(DateUtils.getRelativeTimeSpanString(timestamp));
 	}
 
 	@Override
-    public void setViewImage(ImageView iv, String value) {
-	    final String url = value;
-	    iv.setImageBitmap(null);
-	    new LoadProfileImageAsyncTask(bitmapcashe, iv, url).execute();
-    }
-	
-	
-	
+	public void setViewImage(ImageView iv, String value) {
+		final String url = value;
+		iv.setImageBitmap(null);
+		new LoadProfileImageAsyncTask(bitmapcashe, iv, url).execute();
+	}
+
 }
