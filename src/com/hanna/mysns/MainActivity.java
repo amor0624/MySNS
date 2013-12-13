@@ -1,7 +1,5 @@
 package com.hanna.mysns;
 
-import java.util.ArrayList;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -47,6 +45,12 @@ public class MainActivity extends Activity {
 				startActivity(new Intent(MainActivity.this,
 				        TwitterTimelineActivity.class)
 				        .addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT));
+			else if (iconMenu.title.equals(getResources().getString(
+			        R.string.titleSettings)))
+				startActivity(new Intent(MainActivity.this,
+				        SettingsActivity.class)
+				        .addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT));
+				
 		}
 	};
 

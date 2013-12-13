@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:entries="@array/provider"
+        android:entryValues="@array/providerValues"
+        android:key="@string/keyProvider"
+        android:summary="@string/summaryProvider"
+        android:title="@string/titleProvider" >
+    </ListPreference>
+    <ListPreference
+        android:entries="@array/interval"
+        android:entryValues="@array/intervalValues"
+        android:key="@string/keyInterval"
+        android:summary="@string/summaryUpdaterInterval"
+        android:title="@string/titleUpdaterInterval" >
+    </ListPreference>
+
+</PreferenceScreen>

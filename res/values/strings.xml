@@ -3,7 +3,6 @@
 
     <string name="app_name">MySNS</string>
     <string name="hello_world">Hello world!</string>
-    
     <string name="titleTwitter">Twitter</string>
     <string name="titleSettings">Settings</string>
     <string name="titleStatus">Status Update</string>
@@ -11,17 +10,55 @@
     <string name="titleNotification">MySNS New Status</string>
     <string name="titleRefresh">Refresh</string>
     <string name="titlePurge">Purge</string>
+    <string name="titleProvider">GPS Settings</string>
+    <string name="titleUpdaterInterval">Update Interval</string>
     
     <string name="descNotification">You have %d new updates</string>
     <string name="descAllDataPurged">All data has been purged</string>
+    <string name="summaryProvider">GPS options</string>
+    <string name="summaryUpdaterInterval">Set interval for auto update</string>
     
     <string name="statusHint">Enter your status here</string>
     <string name="updateButton">Update</string>
     <string name="newStatus">New Status</string>
-    
     <string name="send_timeline_notifications_permission_label">Timeline update permission</string>
     <string name="send_timeline_notifications_permission_description">Permisstion to send new update notification</string>
     <string name="receive_timeline_notifications_permission_label">Timeline update receiver</string>
     <string name="receive_timeline_notifications_permission_description">Permisstion to receive new timeline update notification</string>
+
+    <string name = "keyInterval">interval</string>
+    <string name="keyProvider">provider</string>
+    <string-array name="provider">
+        <item>None, please</item>
+        <item>GPS via satellites!</item>
+        <item>Mobile Network will do</item>
+    </string-array>
+    <string-array name="providerValues">
+        <item>NONE</item>
+        <item>gps</item>
+        <item>network</item>
+    </string-array>
+    
+    <string-array name="interval">
+        <item>Never</item>
+        <!-- For dev. purpose -->
+        <item>5 secs</item>
+        <item>30 secs</item>
+        <item>Fifteen minutes</item>
+        <item>Half hour</item>
+        <item>An hour</item>
+        <item>Half Day</item>
+        <item>Day</item>
+    </string-array>
+    <string-array name="intervalValues">
+        <item>0</item>
+        <item>5000</item>
+        <item>30000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>43200000</item>
+        <item>86400000</item>
+    </string-array>
 
 </resources>
